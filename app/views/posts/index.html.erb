@@ -11,7 +11,4 @@
     </div>
   </div>
 </header>
-<% @posts.each do |p| %>
-	<h3><%=p.title%></h3>
-	<p><%=markdown(p.content)%></p>
-<% end %>
+<div class="col-lg-2"><%= raw @qr.as_html %></div>
